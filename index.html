@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" type="images/x-icon" href="images/favicon-32x32.png">
+</head>
+
+<body>
+  <div class="container max-w-[80vw] mx-auto mt-12">
+    <nav class="navigation relative ">
+      <div class="items flex justify-between items-center">
+        <!--icon-->
+        <div class="img pt-2 hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="images/logoblack.svg" alt="">
+        </div>
+
+        <!--navbar-->
+
+        <div
+          class=" flex flex-col absolute opacity-0 z-20 right-0 top-0  justify-between p-10  w-1/2 h-screen md:space-x-4  md:opacity-100 md:bg-inherit md:static md:w-max md:h-max md:flex-row"
+          id="nav">
+          <a href="#"
+            class="font-semibold text-DarkBlue transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Home</a>
+          <a href="#"
+            class="font-semibold text-DarkBlue transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Products</a>
+          <a href="#"
+            class="font-semibold text-DarkBlue transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">About
+            Us</a>
+          <a href="#"
+            class="font-semibold text-DarkBlue transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Careers</a>
+          <a href="#"
+            class="font-semibold text-DarkBlue transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Community</a>
+        </div>
+
+
+        <!--menu-->
+        <ion-icon name="menu"
+          class="absolute right-1 z-50 text-4xl transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-100 md:hidden"
+          onclick="Menu(this)"></ion-icon>
+
+
+        <!--button-->
+        <a href="#"
+          class="hidden bg-Bright-Red px-6 py-2 text-white font-semibold rounded-full md:block transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 ">Get
+          Started</a>
+      </div>
+
+    </nav>
+    <section id="hero"
+      class="flex flex-col-reverse mt-12 mx-auto space-y-10 md:flex-row  md:justify-between md:items-center">
+      <!--Hero-paragraph-->
+      <div class="flex flex-col hero md:w-1/2 space-y-12 mx-auto">
+        <h1 class="text-5xl max-w-md font-bold text-DarkBlue  text-center  md:text-left">Bring everyone
+          together
+          to build better products.</h1>
+        <p class="text-xl  max-w-md  text-center text-DarkBlue md:text-left md:text-lg ">
+          Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in
+          view.
+        </p>
+        <a href="#"
+          class="w-max mx-auto bg-Bright-Red px-6 py-2 text-white font-semibold rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 md:ml-0 ">Get
+          Started</a>
+      </div>
+      <!--Hero-img-->
+      <img src="images/illustration-intro.svg" alt="" class="mx-auto max-w-md md:w-1/2 ">
+
+    </section>
+    <section class="feature flex flex-col mt-20 mx-auto  md:flex-row space-y-12 md:space-y-0 ">
+      <!--left-coloumn-->
+      <div class="flex flex-col md:w-1/2 space-y-6 mx-auto ">
+        <h2 class="text-4xl max-w-md font-bold text-DarkBlue text-center  md:text-left ">What's different about Manage?
+        </h2>
+        <p class="text-xl text-DarkGrayishBlue max-w-md  text-center  md:text-left md:text-lg ">
+          Manage provides all the
+          functionality your team needs, without the complexity.Our software is tailor-made for modern digital platform
+        </p>
+      </div>
+      <!--Right-column-->
+      <div class="flex flex-col md:w-1/2 space-y-6 md:space-y-2">
+        <div class="item1 space-y-4 md:space-y-1 ">
+          <div class="title flex rounded-l-full items-center space-x-4 bg-VeryPaleRed md:bg-inherit">
+            <p
+              class="text-2xl text-white bg-Bright-Red px-3 py-1 font-bold text-center md:text-lg md:py-0 rounded-full ">
+              01
+            </p>
+            <p class="text-xl font-bold text-VeryDarkBlue md:text-lg ">Track company-wide progress</p>
+
+          </div>
+          <div class="content text-xl  md:text-sm text-DarkGrayishBlue  text-center md:text-left md:ml-16">
+            <p>See how your day-to-day tasks fit into the wider visions. Go from tracking progress at the milestone
+              level all
+              the way done to the smallest of details.Never lose sight of the bigger picture again.</p>
+
+
+          </div>
+        </div>
+        <div class="item2 space-y-4 md:space-y-1 ">
+          <div class="title flex rounded-l-full items-center space-x-4 bg-VeryPaleRed md:bg-inherit">
+            <p
+              class="text-2xl text-white bg-Bright-Red px-3 py-1 font-bold text-center md:text-lg md:py-0 rounded-full ">
+              02
+            </p>
+            <p class="text-xl font-bold text-VeryDarkBlue md:text-lg ">Advanced built-in reports</p>
+
+          </div>
+          <div class="content text-xl  md:text-sm text-DarkGrayishBlue  text-center md:text-left md:ml-16">
+            <p>Set internet delivery estimates and track progress toward company goals. Our customisable dashboard helps
+              you
+              built out the reports you need to keep key stakeholders informed.</p>
+
+
+          </div>
+        </div>
+        <div class="item3 space-y-4 md:space-y-1 ">
+          <div class="title flex rounded-l-full items-center space-x-4 bg-VeryPaleRed md:bg-inherit">
+            <p
+              class="text-2xl text-white bg-Bright-Red px-3 py-1 font-bold text-center md:text-lg md:py-0 rounded-full ">
+              03
+            </p>
+            <p class="text-xl font-bold text-VeryDarkBlue md:text-lg ">Everything you need in one place</p>
+
+          </div>
+          <div class="content text-xl  md:text-sm text-DarkGrayishBlue  text-center md:text-left md:ml-16">
+            <p>Stop jumping from one service to another to communicate,store files,track tasks and share documents.
+              Manage
+              offers an all-in-one team productivity solotion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Comments-->
+    <section class=" mt-20 space-y-6">
+      <h2 class="text-4xl max-w-md font-bold text-DarkBlue text-center  mx-auto mb-20 ">What they've said?</h2>
+
+      <div class="flex flex-row space-x-4">
+        <fieldset class="hidden bg-slate-100/60 md:block" id="anisha">
+          <legend class="mx-auto">
+            <img src="images/avatar-anisha.png" alt="" class="z-20 mx-auto " width="100px">
+          </legend>
+          <div class="card1 p-5  ">
+            <h2 class="text-center text-xl pt-10 text-VeryDarkBlue font-bold md:text-lg">Anisha Li</h2>
+            <p class="text-DarkGrayishBlue text-xl text-center md:text-lg">"We have beenn able to cancel so many other
+              subscriptions since
+              we using Manage. There is no more cross-channel confussion and everyone is much more focused"</p>
+          </div>
+
+        </fieldset>
+        <fieldset class=" bg-slate-100/60 md:block" id="ali">
+          <legend class="mx-auto">
+            <img src="images/avatar-ali.png" alt="" class="z-20 mx-auto " width="100px">
+          </legend>
+          <div class="card2 p-5  ">
+            <h2 class="text-center text-xl pt-10 text-VeryDarkBlue font-bold md:text-lg">Ali Bravo</h2>
+            <p class="text-DarkGrayishBlue text-xl text-center md:text-lg">"We have beenn able to cancel so many other
+              subscriptions since
+              we using Manage. There is no more cross-channel confussion and everyone is much more focused"</p>
+          </div>
+
+        </fieldset>
+        <fieldset class="hidden bg-slate-100/60 md:block" id="richard">
+          <legend class="mx-auto">
+            <img src="images/avatar-richard.png" alt="" class="z-20 mx-auto " width="100px">
+          </legend>
+          <div class="card3 p-5  ">
+            <h2 class="text-center text-xl pt-10 text-VeryDarkBlue font-bold md:text-lg">Richard Watts</h2>
+            <p class="text-DarkGrayishBlue text-xl text-center md:text-lg">"We have beenn able to cancel so many other
+              subscriptions since
+              we using Manage. There is no more cross-channel confussion and everyone is much more focused"</p>
+          </div>
+
+        </fieldset>
+      </div>
+    </section>
+    <!--Pagination-->
+    <div class="flex flex-row justify-center  pagination mt-20 space-x-2 md:hidden">
+      <button href="#" type="button"
+        class="rounded-full border-2 border-Bright-Red px-3 py-3 transition ease-in-out hover:bg-Bright-Red hover:-translate-y-1 hover:scale-110 duration-300"
+        id="left"></button>
+      <button href="#" type="button"
+        class="rounded-full border-2 border-Bright-Red px-3 py-3 transition ease-in-out hover:bg-Bright-Red hover:-translate-y-1 hover:scale-110 duration-300"
+        id="middle"></button>
+      <button href="#" type="button"
+        class="rounded-full border-2 border-Bright-Red px-3 py-3 transition ease-in-out hover:bg-Bright-Red hover:-translate-y-1 hover:scale-110 duration-300"
+        id="right"></button>
+    </div>
+    <!--Button-->
+    <div class="flex flex-row mt-28 ">
+      <a href="#"
+        class="mx-auto bg-Bright-Red px-6 py-2 text-white font-semibold rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 ">Get
+        Started</a>
+    </div>
+  </div>
+  <!--orange-bar -->
+  <div
+    class="flex  flex-col bg-Bright-Red mt-20 h-[350px] justify-center items-center space-y-6 md:flex-row md:justify-between">
+    <h1 class="text-4xl max-w-max font-bold text-white  mx-auto text-center md:max-w-3/4 md:text-left">Simplify how your
+      team works today.</h1>
+    <a href="#"
+      class="mx-auto bg-white px-6 py-2 text-Bright-Red font-semibold rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-500 duration-300 ">Get
+      Started</a>
+  </div>
+  <!--Footer-->
+  <footer class=" bg-VeryDarkBlue  ">
+    <div
+      class="flex flex-col mx-auto w-[80%] h-[350px]  justify-center items-center space-y-6 md:flex-row md:justify-between">
+      <div
+        class=" column-1 order-3 flex flex-col-reverse  md:w-1/4  h-[50%] justify-between items-center md:flex-col md:order-1 space-y-12">
+        <!--icon-->
+        <div class="img pt-2 hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="images/logowhite.svg" alt="" class="fill-white">
+        </div>
+        <div class="flex flex-row space-x-5">
+          <img src="images/icon-facebook.svg" alt="" class="hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="images/icon-youtube.svg" alt="" class="hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="images/icon-twitter.svg" alt="" class="hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="images/icon-pinterest.svg" alt="" class="hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="images/icon-instagram.svg" alt="" class="hover:-translate-y-1 hover:scale-110 duration-300">
+        </div>
+
+      </div>
+      <div class="column2  flex md:w-1/2 md:justify-center h-[50%]  justify-start space-x-12 order-2">
+        <div class=" flex flex-col md:w-1/4    justify-between items-start  ">
+          <a href="#"
+            class="font-semibold text-white transition  ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Home</a>
+          <a href="#"
+            class="font-semibold text-white transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Products</a>
+          <a href="#"
+            class="font-semibold text-white transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">About
+            Us</a>
+          <a href="#"
+            class="font-semibold text-white transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Pricing</a>
+
+        </div>
+        <div class=" flex flex-col md:w-1/4  justify-between items-start ">
+          <a href="#"
+            class="font-semibold text-white transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Careers</a>
+          <a href="#"
+            class="font-semibold text-white transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Community</a>
+          <a href="#"
+            class="font-semibold text-white transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:text-Bright-Red duration-100 ">Privacy
+            Police</a>
+
+        </div>
+      </div>
+
+      <div class="column3 order-1 flex flex-col md:w-1/4   h-[50%] justify-between  md:order-4 md:items-start">
+        <div class=" flex flex-row  space-x-1  ">
+          <input type="text" name="input" id="input" placeholder="Updates in your index"
+            class="rounded-full p-3 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+          <button type="submit"
+            class=" bg-Bright-Red px-5 py-3 text-white font-semibold rounded-full md:block transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300">Go</button>
+
+
+
+        </div>
+        <p class="hidden text-sm self-end text-DarkGrayishBlue md:block ">&#169; Copyright 2020 All Rights Reserved</p>
+      </div>
+
+      <div class="order-4 md:hidden">
+        <p class="text-sm text-DarkGrayishBlue ">&#169; Copyright 2020 All Rights Reserved</p>
+      </div>
+
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const y = document.getElementById("nav")
+    const Menu = (e) => {
+      e.name === 'menu' ? (e.name = 'close', y.classList.add('opacity-100')) : (e.name = 'menu', y.classList.remove('opacity-100'));
+
+    }
+    const p = document.getElementById('anisha')
+    const q = document.getElementById('ali')
+    const r = document.getElementById('richard')
+    const s = document.getElementById('left')
+    const t = document.getElementById('middle')
+    const u = document.getElementById('right')
+
+
+    s.addEventListener('click', () => {
+      (p.classList.remove('hidden')),
+        (p.classList.add('block')), (q.classList.add('hidden')), (r.classList.add('hidden'))
+    })
+    t.addEventListener('click', () => {
+      (q.classList.remove('hidden')),
+        (q.classList.add('block')), (r.classList.add('hidden')), (p.classList.add('hidden'))
+    })
+    u.addEventListener('click', () => {
+      (r.classList.remove('hidden')),
+        (r.classList.add('block')), (p.classList.add('hidden')), (q.classList.add('hidden'))
+    })
+
+
+  </script>
+</body>
+
+</html>
